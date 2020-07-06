@@ -1,0 +1,13 @@
+echo \" <<'PS_FILE' >/dev/null # " | Out-Null
+Start-Sleep -s SLEEP_INTERVAL
+X_POWERSHELL_SCRIPT_X
+while ( ! $MyInvocation.MyCommand.Source ) { $input_line = Read-Host }
+exit
+<#
+PS_FILE
+set +o histexpand 2>/dev/null
+sleep SLEEP_INTERVAL
+X_BASH_SCRIPT_X
+case $- in *"i"*) cat /dev/stdin >/dev/null ;; esac
+exit
+#>
