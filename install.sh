@@ -5,3 +5,4 @@ go get -u github.com/olekukonko/tablewriter
 go get -u github.com/chzyer/readline
 go get -u github.com/common-nighthawk/go-figure
 go get -u github.com/gobuffalo/packr
+go build snowcrash.go
