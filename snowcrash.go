@@ -193,7 +193,7 @@ func random_string(n int) string{
 func generate_payload(payload_name string, sleep_interval string, 
 					out string, stdout bool){
 	available_payloads := []string{"cmd_exec", "reverse_shell", "custom", 
-									"exfiltrate"}
+									"exfiltrate", "memexec"}
     if (! contains(available_payloads, payload_name)){
         print_error("No such payload: "+payload_name)
         os.Exit(0)
