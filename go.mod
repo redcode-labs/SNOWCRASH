@@ -11,4 +11,5 @@ require (
 	github.com/fatih/color v1.10.0
 	github.com/gobuffalo/packr v1.30.1
 	github.com/olekukonko/tablewriter v0.0.5
+	golang.org/x/sys v0.0.0-20220811171246-fbc7d0a398ab // indirect
 )
